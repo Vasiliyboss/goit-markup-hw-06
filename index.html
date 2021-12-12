@@ -359,6 +359,20 @@
             </li>
         </ul>
     </div>
+    <div class="footer-div-form">
+        <p class="form-title">Подпишитесь на рассылку</p>
+        <form class="footer-form" action="#">
+            <div class="form-div"></div>
+         <label for="form"></label>   
+         <input type="text" name="form" class="footer-input" placeholder="E-mail" id="form">
+         <button class="form-btn" type="button">
+            <span class="form-span">Подписаться</span>
+        <svg class="form-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-icon-send"></use>
+        </svg></button>   
+        </div>
+        </form>
+    </div>
     </div>
 </footer>
 <div class="backdrop is-hidden" data-modal>
@@ -368,6 +382,42 @@
                 <use href="./images/icons.svg#icon-close"></use>
             </svg>
         </button>
+        <p class="modal-text">Оставьте свои данные, мы вам перезвоним</p>
+        <form action="#">
+            <div class="modal-div">
+            <label class="modal-label" for="name">Имя</label>
+            <input type="text" name="name" class="modal-input" id="name" required>
+            <svg class="modal-svg" width="18" height="18">
+            <use href="./images/icons.svg#icon-person"></use>
+            </svg>
+            </div>
+            <div class="modal-div">
+            <label class="modal-label" for="tel">Телефон</label>
+            <input type="tel" name="tel" class="modal-input" id="tel" required>
+            <svg class="modal-svg" width="18" height="18">
+                <use href="./images/icons.svg#icon-phone"></use>
+            </svg>
+            </div>
+            <div class="modal-div">
+            <label class="modal-label" for="mail">Почта</label>
+            <input type="email" name="mail" class="modal-input" id="mail" required>
+            <svg class="modal-svg" width="18" height="18">
+                <use href="./images/icons.svg#icon-email"></use>
+            </svg>
+            </div>
+            <div class="modal-div">
+            <label class="modal-label" for="area">Комментарий</label>
+            <textarea name="area" id="area" class="modal-area" placeholder="Введите текст"></textarea>
+            </div>
+            <div class="modal-check">
+                <input type="checkbox" name="check" id="check" value="check" class="input-check is-hidden">
+                <label for="check" class="label-check"><span class="check-span"><svg class="check-icon" width="16" height="15">
+                    <use href="./images/icons.svg#icon-icon-check"></use>
+                </svg></span>
+                    Соглашаюсь с рассылкой и принимаю <a class="modal-a" href=""> Условия договора</a></label>
+            </div>
+            <button class="btn" type="submit">Отправить</button>
+        </form>
     </div>
 </div>
 <script src="./js/madal.js"></script>
